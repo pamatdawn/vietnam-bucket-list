@@ -21,9 +21,17 @@ function SyncManager() {
   return null;
 }
 
+function HydrationManager() {
+  useEffect(() => {
+    useBucketList.persist.rehydrate();
+  }, []);
+  return null;
+}
+
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <SessionProvider>
+      <HydrationManager />
       <SyncManager />
       {children}
     </SessionProvider>

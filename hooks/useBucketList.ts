@@ -30,6 +30,7 @@ export const useBucketList = create<BucketListState>()(
     }),
     {
       name: 'vietnam-bucket-2026',
+      skipHydration: true,
       onRehydrateStorage: () => (state) => {
         if (state) state.isLoaded = true;
       },

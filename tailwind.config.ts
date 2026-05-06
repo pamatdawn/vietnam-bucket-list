@@ -5,6 +5,15 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './data/**/*.{js,ts,jsx,tsx}',
+    './hooks/**/*.{js,ts,jsx,tsx}',
+  ],
+  safelist: [
+    'bg-blue-600', 'bg-blue-50', 'bg-blue-100', 'text-blue-800',
+    'bg-red-600',  'bg-red-50',  'bg-red-100',  'text-red-800',
+    'bg-pink-600', 'bg-pink-50', 'bg-pink-100', 'text-pink-800',
+    'bg-orange-500','bg-orange-50','bg-orange-100','text-orange-800',
+    'bg-teal-600', 'bg-teal-50', 'bg-teal-100', 'text-teal-800',
   ],
   theme: {
     extend: {
